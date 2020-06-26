@@ -1,13 +1,12 @@
 import React from 'react';
 
 import './App.css';
+import Ipod from './ipod';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Ipod-project
-      </header>
+      <Ipod />
     </div>
   );
 }
