@@ -1,5 +1,4 @@
-
-.outer {
+.outer-area {
     background: #d6d6d6;
     height: auto;
     width: auto;
@@ -52,7 +51,7 @@
     padding: 3px;
   }
   
-  .controlouter{
+  .outercontroller{
     height: 180px;
     width: 180px;
     background: white;
@@ -66,7 +65,7 @@
       margin-left: 70px;
   }
   
-  #previous{
+  #prev{
     position:absolute;
     margin-top: 77px;
     margin-left: 17px;
@@ -84,7 +83,7 @@
     margin-left: 145px;
   }
   
-  .controlinner{
+  .innercontroller{
     position : absolute;
      height: 80px;
     width: 80px;
