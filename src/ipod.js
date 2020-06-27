@@ -3,7 +3,7 @@ import Screenview from './screenView';
 import './ipod.css';
 import ZingTouch from 'zingtouch';
 import Controlpad from './controlpad';
-import './images/playlist.png';
+import './images/setting.jpg';
 
 
 
@@ -16,7 +16,7 @@ class Ipod extends React.Component{
             Menu:true,
             album:false,
             songs:true,
-            playlist:false,
+            setting:false,
             artist:false,
             showHide:false
         }
@@ -48,9 +48,9 @@ class Ipod extends React.Component{
                 Artist.style.color="black";
                 Artist.style.backgroundColor="white";
 
-                let Playlists =document.getElementById('Playlists');
-                Playlists.style.backgroundColor="white";
-                Playlists.style.color="black";
+                let Settings =document.getElementById('Settings');
+                Settings.style.backgroundColor="white";
+                Settings.style.color="black";
 
                 //trace the wheel
                 this.setState({
@@ -58,7 +58,7 @@ class Ipod extends React.Component{
                     album:false,
                     songs:true,
                     artist:false,
-                    playlist:false
+                    setting:false
                 })
                // console.log(this.state.songs);
             }
@@ -75,9 +75,9 @@ class Ipod extends React.Component{
                     songs.style.backgroundColor="white";
                     songs.style.color="black";
 
-                    let Playlists =document.getElementById('Playlists');
-                    Playlists.style.backgroundColor="white";
-                    Playlists.style.color="black";
+                    let Settings =document.getElementById('Settings');
+                    Settings.style.backgroundColor="white";
+                    Settings.style.color="black";
 
                     let Artist =document.getElementById('Artist');
                     Artist.style.color="black";
@@ -88,7 +88,7 @@ class Ipod extends React.Component{
                         album:true,
                         songs:false,
                         artist:false,
-                        playlist:false
+                        setting:false
                     })
 
                    // console.log(this.state.album);
@@ -104,9 +104,9 @@ class Ipod extends React.Component{
                     songs.style.backgroundColor="white";
                     songs.style.color="black";
 
-                    let Playlists =document.getElementById('Playlists');
-                    Playlists.style.backgroundColor="white";
-                    Playlists.style.color="black";
+                    let Settings =document.getElementById('Settings');
+                    Settings.style.backgroundColor="white";
+                    Settings.style.color="black";
                     
                     let Album =document.getElementById('Album');
                     Album.style.backgroundColor="white";
@@ -116,7 +116,7 @@ class Ipod extends React.Component{
                         album:false,
                         songs:false,
                         artist:true,
-                        playlist:false
+                        setting:false
                     })
     
                   //  console.log(this.state.artist);
@@ -124,7 +124,7 @@ class Ipod extends React.Component{
             }
 
             if(angle<45 && angle>30 && this.state.Menu===true){
-                //Playlist
+                //setting
 
                 let Album =document.getElementById('Album');
                 Album.style.backgroundColor="white";
@@ -134,9 +134,9 @@ class Ipod extends React.Component{
                 songs.style.backgroundColor="white";
                 songs.style.color="black";
 
-                let Playlists =document.getElementById('Playlists');
-                Playlists.style.backgroundColor="black";
-                Playlists.style.color="white";
+                let Settings =document.getElementById('Settings');
+                Settings.style.backgroundColor="black";
+                Settings.style.color="white";
 
                 let Artist =document.getElementById('Artist');
                 Artist.style.backgroundColor="white";
@@ -148,10 +148,10 @@ class Ipod extends React.Component{
                     album:false,
                     songs:false,
                     artist:false,
-                    playlist:true
+                    setting:true
                 })
 
-               // console.log(this.state.playlist);
+               // console.log(this.state.setting);
             }
             
 
@@ -228,7 +228,7 @@ class Ipod extends React.Component{
          
  
          
-         if(this.state.playlist===true && this.state.Menu===true){
+         if(this.state.setting===true && this.state.Menu===true){
              
              this.setState({Menu:false},()=>{
                  console.log(this.state.Menu);
@@ -242,9 +242,9 @@ class Ipod extends React.Component{
  
             let h1 =document.createElement('img');
             h1.id="h1-screen";
-            //h1.textContent="PlayList";
+            //h1.textContent="setting";
             
-            h1.setAttribute("src",require('./images/playlist.png'));
+            h1.setAttribute("src",require('./images/setting.jpg'));
             h1.style.height="100%";
             h1.style.width="100%";
             screen.appendChild(h1);
@@ -278,7 +278,7 @@ class Ipod extends React.Component{
             album:false,
             songs:true,
             artist:false,
-            playlist:false
+            setting:false
            })
        }
     }

@@ -12,7 +12,7 @@ const Screenview= (props)=>{
                    <li id="songs" className="selected" >Songs</li>
                    <li id="Album" >Album</li>
                    <li id="Artist">Artist</li>
-                   <li id="Playlists">Playlists</li>
+                   <li id="Settings">Setting</li>
                </ul>
                
             </div>      
