@@ -1,8 +1,8 @@
 .screen{
-    width: 240px;
-    height: 200px;
+    width: 100vh;
+    height: 100vw;
     text-align: left;
-    background-color: white;
+    background-color: white;   
 }
 
 .screen ul li{

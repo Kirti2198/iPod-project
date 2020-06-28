@@ -4,9 +4,8 @@ import './controlpad.css';
 
 const Screenview= (props)=>{
 
-     return (
-
-            <div className="screen" id="mainScreen">
+     return (         
+            <div className="screen"  id="mainScreen" >
                 {/* <span className="heading">Ipod.js</span> */}
                <ul id="list">
                    <li id="songs" className="selected" >Songs</li>
@@ -15,7 +14,7 @@ const Screenview= (props)=>{
                    <li id="Settings">Setting</li>
                </ul>
                
-            </div>      
+            </div>  
         );
     }
 
